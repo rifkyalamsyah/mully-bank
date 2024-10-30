@@ -1,0 +1,15 @@
+{
+  "name": "mully-bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "rifky alamsyah",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.5"
+  }
+}
