@@ -1,17 +1,60 @@
+// fonts
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../assets/fonts/Gilroy-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../assets/fonts/Gilroy-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// mobile code
 body {
   font-family: 'Gilroy', sans-serif;
   color: $navyBlue;
+}
+
+// paragraph
+p {
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 700;
+.text-lg {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
 }
 
+// headings
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
 
+@media (min-width: 1024px) {
+  // desktop
+
+  // headings
+  h1 {
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  // paragraph
+  .text-lg {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.03rem;
+  }
+}
