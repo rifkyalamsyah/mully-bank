@@ -1,0 +1,41 @@
+// container
+@mixin container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+// reset list
+@mixin reset-list {
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+// nav menu
+@mixin nav-menu {
+  text-decoration: none;
+  color: $navyBlue;
+  font-weight: 700;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $royalBlue;
+  }
+}
+
+// cta button rounded
+@mixin btn-rounded {
+  padding: 1rem 2rem;
+  background-color: $royalBlue;
+  color: $white;
+  border-radius: 4rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $navyBlue;
+    color: $white;
+  }
+}

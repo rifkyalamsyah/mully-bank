@@ -5,13 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mully Bank</title>
     <meta name="description" content="Transforming Banking for the Digital Age">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header></header>
+  <!-- navbar -->
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__left-nav">
+          <a href="/" class="header__logo">
+            <img src="src/assets/images/mully-logo.svg" alt="brand-logo">
+          </a>
+          <div id="menu-icon" class="header__menu-toggle">
+            <img src="src/assets/icons/list.svg" alt="toggle-icon">
+          </div>
+          <div class="header__menu hidden">
+            <ul class="header__nav-list">
+              <li><a href="#domains">Domains</a></li>
+              <li><a href="#webhosting">Web Hosting</a></li>
+              <li><a href="#email">Email</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__right-nav">
+          <ul class="header__nav-list">
+            <li><a href="#support">Support</a></li>
+            <li><a href="#login">Login</a></li>
+            <a href="#get-started" class="cta-button">Get Started</a>
+          </ul>
+        </div> 
+        <!-- mobile menu -->
+        <div id="menu-list" class="header__mobile-menu hidden">
+          <ul class="header__nav-list">
+            <li><a href="#domains">Domains</a></li>
+            <li><a href="#webhosting">Web Hosting</a></li>
+            <li><a href="#email">Email</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#support">Support</a></li> 
+          </ul>
+          <hr>
+          <div class="header__cta">
+            <a href="#login">Login</a>
+            <a href="#get-started" class="cta-button">Get Started</a>
+          </div>
+        </div>
+        <!-- mobile menu end -->
+      </nav>
+    </header>
+  <!-- navbar end -->
     <main>
-        <section></section>
+      <section>
+      </section>
     </main>
+    <!-- footer -->
     <footer></footer>
+    <!-- footer end -->
+    <script src="src/js/script.js"></script>
 </body>
 </html>
