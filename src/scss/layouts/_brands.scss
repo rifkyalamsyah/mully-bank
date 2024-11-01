@@ -1,0 +1,21 @@
+// mobile code
+.brands{
+    padding: 3rem 0;
+    margin: auto;
+    overflow: hidden;
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    // dekstop code
+    .brands{
+        &__wrapper{
+            gap: 5.1875rem;
+        }
+    }
+}

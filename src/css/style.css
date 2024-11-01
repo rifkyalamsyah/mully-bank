@@ -490,7 +490,6 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    overflow: visible;
   }
   .cardFeatures__card {
     width: 75%;
@@ -538,6 +537,22 @@ h1 {
   .cardFeatures__card-cta h2 {
     text-align: start;
     font-size: 1.5rem;
+  }
+}
+.brands {
+  padding: 3rem 0;
+  margin: auto;
+  overflow: hidden;
+}
+.brands__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .brands__wrapper {
+    gap: 5.1875rem;
   }
 }
 
