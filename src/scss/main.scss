@@ -1,7 +1,8 @@
-@import 'fonts';
-@import 'layout';
+@import 'config';
 @import 'variables';
 @import 'typography';
 @import 'mixins';
-@import 'header';
-@import 'button';
+@import 'components/button';
+@import 'components/badge';
+@import 'components/header';
+@import 'layouts/hero';
