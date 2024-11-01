@@ -37,3 +37,20 @@
     transition: all 0.5s ease;
   }
 }
+
+.btn-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;;
+  border-radius: 1rem;
+  background-color: $transparent;
+  color: $navyBlue;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover{
+    color: $royalBlue;
+    transition: all 0.5s ease;
+  }
+}
