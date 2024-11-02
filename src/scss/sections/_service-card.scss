@@ -1,0 +1,80 @@
+// mobile code
+.service-card {
+  @include container;
+  @include padding-section;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+    hr {
+      width: 100%;
+      border: 1px solid;
+      border-color: $border;
+    }
+  }
+
+  &__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      @include heading-3;
+      text-align: center;
+    }
+  }
+
+  p {
+    @include text-base;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  // tablet code
+  .service-card {
+    &__card {
+      p {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  // desktop code
+  .service-card {
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+
+    &__card {
+      justify-content: start;
+      align-items: start;
+      width: 30%;
+    }
+
+    &__heading-wrapper {
+      align-items: start !important;
+
+      h2 {
+        text-align: start;
+      }
+    }
+
+    p {
+      text-align: start;
+      max-width: 100%;
+    }
+  }
+}
