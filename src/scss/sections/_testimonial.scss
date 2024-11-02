@@ -1,0 +1,94 @@
+// mobile code
+.testimonial {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+
+  &__row-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  h2 {
+    @include heading-2;
+    text-align: center;
+  }
+
+  &__row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    background-color: $lightGray;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .quote {
+      padding: 2rem;
+      border-bottom: 1px solid;
+      border-color: $border;
+    }
+
+    p {
+      @include text-lg;
+      text-align: center;
+    }
+
+    hr {
+      border: 1px solid;
+      border-color: $border;
+    }
+  }
+
+  &__profile {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+
+    img {
+      border-radius: 100%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial {
+    padding: 6rem 0;
+
+    &__row-2 {
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+    }
+
+    &__card {
+      width: 31.125rem;
+
+      .quote {
+        p {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
