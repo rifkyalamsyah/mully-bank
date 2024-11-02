@@ -21,8 +21,13 @@
       gap: 1rem;
     }
 
-    h1,
+    h1{
+      @include heading-1;
+      text-align: center;
+    }
+
     p {
+      @include text-lg;
       text-align: center;
     }
 
@@ -38,6 +43,8 @@
 
     img {
       width: 100%;
+      height: auto;
+      object-fit: contain;
     }
   }
 

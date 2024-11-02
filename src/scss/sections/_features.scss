@@ -1,0 +1,113 @@
+// mobile code
+.features {
+  @include container;
+  @include padding-section;
+  h2 {
+    @include heading-2;
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+    h2 {
+      @include heading-3;
+      text-align: center;
+    }
+
+    p {
+      @include text-base;
+      text-align: center;
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid;
+      border-color: $border;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  // tablet code
+  .features {
+    h2{
+      width: 75%;
+    }
+
+    &__card-wrapper {
+      flex-direction: row;
+      align-items: start;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: 45%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  // dekstop code
+  .features {
+    &__row {
+      align-items: stretch;
+      gap: 5rem;
+    }
+
+    &__heading-wrapper {
+      align-items: start;
+
+      h2 {
+        width: 60%;
+        text-align: start;
+      }
+    }
+
+    &__card-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: nowrap;
+    }
+
+    &__card {
+      width: 15rem;
+      align-items: start;
+
+      h2 {
+        text-align: start;
+      }
+
+      p {
+        text-align: start;
+      }
+    }
+  }
+}
