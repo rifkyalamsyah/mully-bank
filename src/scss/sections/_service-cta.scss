@@ -1,0 +1,239 @@
+// mobile code
+.service-cta {
+  @include container;
+  @include padding-section;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+
+  &__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    color: $white;
+    border-radius: 2rem;
+    position: relative;
+
+    p {
+      @include text-lg;
+      line-height: 1.2 !important;
+      width: 20%;
+    }
+
+    &:nth-child(1) {
+      background-color: $royalBlue;
+      transform: rotate(1.941deg);
+
+      .coin {
+        position: absolute;
+        bottom: -4rem;
+        right: 3rem;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: $pinkMagenta;
+      transform: rotate(-5.779deg);
+
+      .coin {
+        position: absolute;
+        top: -4.5rem;
+        left: -4rem;
+      }
+    }
+
+    &:nth-child(4) {
+      background-color: $turquoiseBlue;
+      color: $navyBlue;
+      transform: rotate(-2.121deg);
+
+      .coin {
+        position: absolute;
+        top: -8rem;
+        right: -8rem;
+      }
+    }
+
+    &:nth-child(5) {
+      .card {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+        color: $white;
+        border-radius: 2rem;
+        background-color: $lightYellow;
+        color: $navyBlue;
+        transform: rotate(0.633deg);
+        z-index: -4;
+      }
+
+      .coin {
+        position: absolute;
+        top: -3.5rem;
+        left: -3.5rem;
+        z-index: -10;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      @include heading-2;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  // tablet code
+  .service-cta {
+    &__card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 4rem;
+    }
+
+    &__card {
+      &:nth-child(1) {
+        margin-left: -24rem;
+        margin-bottom: -8rem;
+
+        .coin {
+          position: absolute;
+          bottom: -4.5rem;
+          right: 6rem;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-bottom: -2rem;
+        margin-right: -24rem;
+
+        .coin {
+          position: absolute;
+          top: -2rem;
+          left: -6rem;
+        }
+      }
+
+      &:nth-child(4) {
+        margin-bottom: 1rem;
+        margin-right: -24rem;
+
+        .coin {
+          top: -9rem;
+          right: -3rem;
+        }
+      }
+
+      &:nth-child(5) {
+        margin-top: -12rem;
+        margin-left: -18rem;
+        .card {
+          justify-content: start;
+          align-items: center;
+        }
+
+        .coin {
+          top: -3.5rem;
+          left: -3rem;
+        }
+      }
+    }
+
+    &__row {
+      h2 {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  // desktop code
+  .service-cta {
+    &__card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 4rem;
+    }
+
+    &__card {
+      padding: 1.5rem;
+
+      &:nth-child(1) {
+        margin-left: -40rem;
+        margin-bottom: -8rem;
+
+        .coin {
+          position: absolute;
+          bottom: -4.5rem;
+          right: 6rem;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-bottom: -2rem;
+        margin-right: -50rem;
+
+        .coin {
+          position: absolute;
+          top: -3rem;
+          left: -8rem;
+        }
+      }
+
+      &:nth-child(4) {
+        margin-bottom: 1rem;
+        margin-right: -50rem;
+
+        .coin {
+          top: -9rem;
+          right: -3rem;
+        }
+      }
+
+      &:nth-child(5) {
+        margin-top: -9rem;
+        margin-left: -30rem;
+        .card {
+          align-items: center;
+        }
+
+        .coin {
+          top: -3.5rem;
+          left: -3rem;
+        }
+      }
+    }
+
+    &__row {
+      h2 {
+        width: 60%;
+      }
+    }
+  }
+}
