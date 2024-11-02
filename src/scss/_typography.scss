@@ -13,44 +13,65 @@
   font-style: normal;
 }
 
-// mobile code
 body {
   font-family: 'Gilroy', sans-serif;
   color: $navyBlue;
 }
 
-// paragraph
-p {
-  line-height: 1.6;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%;
-  letter-spacing: 0.03rem;
-}
-
+// mixins
 // headings
-h1 {
+@mixin heading-1 {
   font-size: 3rem;
   font-weight: 400;
-}
 
-@media (min-width: 1024px) {
-  // desktop
-
-  // headings
-  h1 {
+  @media (min-width: 1024px) {
     font-size: 4.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
   }
+}
 
-  // paragraph
-  .text-lg {
+@mixin heading-2 {
+  font-size: 2rem;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+  }
+}
+
+@mixin heading-3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+  }
+}
+
+// paragraph
+@mixin text-base {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@mixin text-lg {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+
+  @media (min-width: 1024px) {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
