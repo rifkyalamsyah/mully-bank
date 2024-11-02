@@ -1,5 +1,5 @@
 // mobile code
-.cardFeatures {
+.card-feature {
   @include container;
   @include padding-section;
 
@@ -26,7 +26,7 @@
       color: $white;
     }
 
-    .cardFeatures__highlight {
+    .card-feature__highlight {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -87,7 +87,7 @@
 
 @media (min-width: 768px) {
   // tablet code
-  .cardFeatures {
+  .card-feature {
     display: flex;
     flex-direction: row;
 
@@ -103,7 +103,7 @@
 
 @media (min-width: 1024px) {
   // dekstop code
-  .cardFeatures {
+  .card-feature {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -133,7 +133,7 @@
       }
     }
 
-    .cardFeatures__highlight {
+    .card-feature__highlight {
       display: flex;
       justify-content: start;
       gap: 4.5rem;

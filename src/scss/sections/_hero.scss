@@ -8,7 +8,7 @@
   align-items: center;
   gap: 3rem;
 
-  &__col-left {
+  &__col-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@
     }
   }
 
-  &__col-right {
+  &__col-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@
 @media (min-width: 768px) {
   // tablet code
   .hero {
-    &__col-left {
+    &__col-1 {
       h1,
       p {
         max-width: 80%;
@@ -78,7 +78,7 @@
     align-items: center;
     gap: 3rem;
 
-    &__col-left {
+    &__col-1 {
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -99,7 +99,7 @@
       }
     }
 
-    &__col-right {
+    &__col-2 {
       width: 50%;
 
       img {
