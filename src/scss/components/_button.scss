@@ -1,9 +1,9 @@
 // btn-primary
-.btn-primary{
+.btn-primary {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;;
+  gap: 0.625rem;
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: $goldenYellow;
@@ -11,20 +11,23 @@
   text-decoration: none;
   font-weight: 700;
 
-
-  &:hover{
+  &:hover {
     background-color: $royalBlue;
     color: $white;
     transition: all 0.5s ease;
+
+    svg path {
+      fill: $white;
+    }
   }
 }
 
 // btn-secondary
-.btn-secondary{
+.btn-secondary {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;;
+  gap: 0.625rem;
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: $transparent;
@@ -32,25 +35,44 @@
   text-decoration: none;
   font-weight: 700;
 
-  &:hover{
+  &:hover {
     background-color: $lightBlue;
     transition: all 0.5s ease;
   }
 }
 
-.btn-link{
+.btn-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;;
+  gap: 0.625rem;
   border-radius: 1rem;
   background-color: $transparent;
   color: $navyBlue;
   text-decoration: none;
   font-weight: 700;
 
-  &:hover{
+  &:hover {
     color: $royalBlue;
     transition: all 0.5s ease;
+
+    svg path {
+      fill: $royalBlue;
+    }
+  }
+}
+
+// mixins
+// cta button rounded
+@mixin btn-rounded {
+  padding: 1rem 2rem;
+  background-color: $royalBlue;
+  color: $white;
+  border-radius: 4rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $navyBlue;
+    color: $white;
   }
 }
