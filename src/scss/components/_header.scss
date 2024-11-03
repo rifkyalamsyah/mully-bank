@@ -1,5 +1,11 @@
 // Mobile Code
 .header {
+  // mobile xs
+  @media (max-width: 320px) {
+  padding: 1.25rem 1.5rem;
+  }
+
+  // mobile
   padding: 1.25rem 2rem;
 
   &__left-nav {
