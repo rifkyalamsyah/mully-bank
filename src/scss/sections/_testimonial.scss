@@ -38,11 +38,11 @@
       padding: 2rem;
       border-bottom: 1px solid;
       border-color: $border;
-    }
 
-    p {
-      @include text-lg;
-      text-align: center;
+      p {
+        @include text-lg;
+        text-align: center;
+      }
     }
 
     hr {
@@ -54,8 +54,16 @@
   &__profile {
     padding: 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
+
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
 
     p {
       font-size: 1.5rem;
@@ -72,6 +80,7 @@
 }
 
 @media (min-width: 1024px) {
+  // dekstop code
   .testimonial {
     padding: 6rem 0;
 
