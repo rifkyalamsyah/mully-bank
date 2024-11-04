@@ -1,12 +1,11 @@
 // mobile code
 .testimonial {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  overflow: hidden;
 
   &__row-1 {
     display: flex;
@@ -91,7 +90,7 @@
     }
 
     &__card {
-      width: 31.125rem;
+      // min-width: 31.125rem;
 
       .quote {
         p {
