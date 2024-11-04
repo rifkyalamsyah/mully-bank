@@ -29,3 +29,30 @@ Object.assign(swiperEl, {
 });
 swiperEl.initialize();
 // swiper js end
+
+// accordion
+const accordion = document.querySelectorAll('.accordion__item');
+
+accordion.forEach((item) => {
+  const label = item.querySelector('.accordion__item-label');
+  const content = item.querySelector('.accordion__item-content');
+
+  label.addEventListener('click', () => {
+    item.classList.toggle('active');
+
+    if (item.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = 0;
+    }
+
+    // rotate icon
+    const icon = label.querySelector('.icon');
+    if (icon) {
+      icon.style.transform = item.classList.contains('active')
+        ? 'rotate(180deg)'
+        : 'rotate(0deg)';
+    }
+  });
+});
+// accordion end
