@@ -1,3 +1,8 @@
+// AOS
+AOS.init({
+  once: true,
+});
+
 // header
 const menuIcon = document.getElementById('menu-icon');
 const menuList = document.getElementById('menu-list');
