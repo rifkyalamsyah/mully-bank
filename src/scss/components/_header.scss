@@ -2,7 +2,7 @@
 .header {
   // mobile xs
   @media (max-width: 320px) {
-  padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.5rem;
   }
 
   // mobile
@@ -19,6 +19,10 @@
     display: none;
   }
 
+  &__menu {
+    display: none;
+  }
+
   &__menu-toggle {
     cursor: pointer;
     display: flex;
@@ -26,7 +30,11 @@
   }
 
   &__mobile-menu {
+    display: none;
+    max-height: 0;
     padding: 1rem 0;
+    transition: max-height 2s ease;
+    overflow: hidden;
 
     hr {
       border: 1px solid;
@@ -34,10 +42,14 @@
       margin: 1rem 0;
     }
 
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+    }
+
+    a {
+      font-size: 1.125rem;
     }
 
     .cta-button {
@@ -45,6 +57,11 @@
       text-decoration: none;
       text-align: center;
     }
+  }
+
+  &__mobile-menu.show {
+    display: block;
+    max-height: 1000px;
   }
 
   &__cta {
@@ -93,13 +110,17 @@
     &__right-nav {
       display: block;
 
-      .header__nav-list{
+      .header__nav-list {
         display: flex;
         gap: 1.5rem;
       }
     }
 
     &__mobile-menu {
+      display: none;
+    }
+
+    &__mobile-menu.show {
       display: none;
     }
 
