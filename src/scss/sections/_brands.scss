@@ -5,6 +5,12 @@
   padding: 3rem 0;
   margin: auto;
   overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    $black 10% 90%,
+    transparent
+  );
 
   &:hover .brands__wrapper {
     animation-play-state: paused;

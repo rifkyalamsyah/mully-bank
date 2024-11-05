@@ -83,6 +83,15 @@
   .testimonial {
     padding: 6rem 0;
 
+    .overlay {
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        $black 10% 90%,
+        transparent
+      );
+    }
+
     &__row-2 {
       flex-direction: row;
       justify-content: start;
