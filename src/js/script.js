@@ -7,8 +7,33 @@ AOS.init({
 const menuIcon = document.getElementById('menu-icon');
 const menuList = document.getElementById('menu-list');
 
-menuIcon.addEventListener('click', () => {
-  menuList.classList.toggle('hidden');
+function toggleMenu() {
+  if (menuList.classList.contains('show')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+}
+
+function openMenu() {
+  menuList.classList.add('show');
+  menuList.style.maxHeight = menuList.scrollHeight + 'px';
+}
+
+function closeMenu() {
+  menuList.classList.remove('show');
+  menuList.style.maxHeight = '0';
+}
+
+menuIcon.addEventListener('click', (event) => {
+  event.stopPropagation();
+  toggleMenu();
+});
+
+document.addEventListener('click', (event) => {
+  if (!menuList.contains(event.target) && !menuIcon.contains(event.target)) {
+    closeMenu();
+  }
 });
 // header end
 

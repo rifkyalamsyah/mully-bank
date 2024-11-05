@@ -28,7 +28,7 @@
     align-items: center;
     gap: 1rem;
 
-    h2 {
+    h3 {
       @include heading-3;
       text-align: center;
     }
@@ -67,7 +67,7 @@
     &__heading-wrapper {
       align-items: start !important;
 
-      h2 {
+      h3 {
         text-align: start;
       }
     }
